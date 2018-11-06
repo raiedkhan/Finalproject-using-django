@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+	<link rel="icon" href="{%static 'Images/logo.png'%}" >
+	  <link rel="stylesheet" href="{% static 'css/clickbutton.css' %}">
+    <link rel="stylesheet" href="{% static 'Bootstrap/css/bootstrap.css' %}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<title>Click Game</title>
+</head>
+<body>
+
+<!--Navbar starts-->
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+  	<a class="navbar-brand" href="{% url 'home' %}">R.K.Empire > ></a>
+  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  	</button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home' %}">Home <i class="fas fa-home"></i><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'imagegallery' %}" target="_blank">Image-Gallery <i class="fas fa-images"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'videogallery' %}" target="_blank">Video-Gallery <i class="fas fa-video"></i></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Games <i class="fas fa-gamepad"></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="{% url 'tictac' %}" target="_blank">Tic-Tac-Toe</a>
+          <a class="dropdown-item" href="{% url 'clickbutton' %}">Click The Button</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!--Navbar ends-->
+
+	<!--Welcome starts-->
+
+	<div class="container text-center pt-3">
+		<h1 id="heading">Welcome to Click-The-Button Game <i class="fas fa-mouse-pointer"></i> </h1>
+	</div>
+	<div class="container text-center">
+		<div class="image">
+		</div>
+	</div>
+	
+	<!--Welcome ends-->
+	
+	<div class="container text-center">
+		<h1 id="headrule">Rules Here <i class="fas fa-arrow-down"></i></h1>
+	</div>
+
+	<!--Rule book starts-->
+
+	<div class="container-fluid text-center ">
+		<div class="parallax">
+			<div class="row ">
+				<div class="col-4">
+					<h1>Want to Learn The Rules Press the Button below Or Ignore it</h1>
+					<button type="button"id="showrule">Learn-Rules</button><br><br>
+					<button type="button"id="hiderule" onClick="hiderule()">Hide-Rules</button>
+				</div>
+				<div class="col-4"></div>
+				<div class="col-4">
+					<h1>The Rules will be displayed here:</h1>
+					<p id="rulebook">
+						<br>1) You will get 30 seconds to play Game.
+						<br>2) You Can Restart the game by pressing the restart button.
+						<br>3) You Can Leave the game by pressing EXIT button.
+						<br>NOTE:
+						<br>a) THE BUTTON WILL BE AUTOMATICALLY FADED AWAY AFTER 30 Seconds.
+						<br>b) The Score will also be simultaneously shown.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--Rule book ends-->
+
+	<div class="container text-center">
+		<h1 id="headrule">Let's Start The Game <i class="fas fa-gamepad"></i></h1>
+	</div>
+
+<!--Game Starts-->
+
+<div class="gamearea">
+	<div class="container-fluid text-center">
+		<div class="row ">
+			<div class="col-4">
+					<div class="timer-wrap">
+						<h1>Timeleft</h1>
+						<i class="time">0:30</i>
+						<div class="timer">
+							<span>0</span> : <span>0</span>
+						</div>
+					</div>
+			</div>
+			<div class="col-4">
+				<button id="play">
+					Start <i class="fas fa-power-off"></i>
+				</button><br><br>
+				<button type="button" onClick="onClick()" id="button">
+					Click <i class="fas fa-hand-point-up"></i> me
+				</button>
+			</div>
+			<div class="col-4">
+				<button type="button"id="playagain" onClick="playagain()">
+					Play again <i class="fab fa-rev"></i>
+				</button><br><br>
+	    		<button type="button"id="endgame" onClick="exit()">
+	    		Exit <i class="fas fa-times"></i>
+	    		</button>
+    		</div>
+		</div>
+	</div>
+</div>
+
+<!--Game Ends-->
+
+
+<!--Score starts-->
+
+
+<div class="container-fluid text-center">
+	<div class="row">
+		<div class="col-12">
+			<h1 id="result">Total Clicks: <a id="clicks">0</a></h1>
+		</div>
+	</div>
+</div>
+
+<!--Score Ends-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Bottom Bar Starts-->
+
+<div class="footer-bottom">
+  <p>
+    Designed By:<a href="https://www.facebook.com/raied.razi" target="_blank">Raied Khan</a>   
+    &#169 2018  R.K.Empire
+  </p>
+</div>
+
+<!--Bottom Bar Ends-->
+
+
+
+
+
+	<script>
+	src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+	crossorigin="anonymous"
+	</script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="{% static 'Bootstrap/js/bootstrap.bundle.js' %}" type="text/javascript"></script>
+    <script type="text/javascript" src="{% static 'js/clickbutton.js'%}"></script>
+</body>
+</html>

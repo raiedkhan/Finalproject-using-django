@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="{%static 'Images/mt.png'%}" >
+	<title>MyTube</title>
+  <link rel="stylesheet" href="{% static 'Bootstrap/css/bootstrap.css' %}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/stylesheet.css' %}">
+   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+<body>
+  
+<nav id="main">
+    <ul>
+     <li><a href="mytube.html"><img src="{%static 'Images/mtnav.png'%}" height="80px"width="150px"></a></li>
+     <li>
+      <form>
+     		<table>
+     		 <tr>
+     			<td><input type="text" name="searchbox"class="search"placeholder="Search" size="100"></td>
+     			<td><button class="button"><i class="fa fa-search" aria-hidden="true" title="Search"></i></button></td>
+     		 </tr>
+     	  </table>
+     	</form>
+     </li>
+      <li><a href="#"><i class="fas fa-video"style="font-size: 25px" title="Upload Video"></i></a></li>
+      <li><a href="#" class="effect-2"><i class="fab fa-buromobelexperte"style="font-size: 25px" title="Applications"></i></a></li>
+      <li><a href="#"><i class="fa fa-comment"style="font-size: 25px" title="Customer Support"></i></a></li>
+      <li><a href="#"><i class="fas fa-bell"style="font-size: 25px" title="Notifications"></i></a></li>
+      <li><a href="{% url 'signtube' %}" target="_blank" title="Signup">Signup</a></li>
+    </ul>
+    <p id="heading">A Platform for Exploring Latest and Best Youtube contents.</p>
+  </nav>
+<div class="body">
+
+<iframe width="560" height="300" src="https://www.youtube.com/embed/AsryYwtYsDQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe src="{%static 'Images/adv.png'%}" width="560" height="300" frameborder="0" ></iframe>
+<br><br>
+
+<h5 id="trending">Trending</h5>
+<div class="row">
+    <div class="thumb ">
+        <iframe width="267" height="150" src="https://www.youtube.com/embed/zI-Pux4uaqM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <p class="card-text" align="left"><a href="https://youtu.be/zI-Pux4uaqM">Thugs of hindostan-OFFICIAL TRAILER</a></p>
+    </div>
+    <div class="thumb">
+        <iframe width="267" height="150" src="https://www.youtube.com/embed/lcwmDAYt22k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <p class="card-text" align="left"><a href="https://youtu.be/lcwmDAYt22k">Bumblebee 2018 New official trailer</a></p>
+    </div>
+    <div class="thumb">
+        <iframe width="267" height="150" src="https://www.youtube.com/embed/8bYBOVWLNIs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <p class="card-text" align="left"><a href="https://youtu.be/8bYBOVWLNIs">Fantastic Beast Final-trailer</a></p>
+    </div>
+    <div class="thumb">
+        <iframe width="267" height="150" src="https://www.youtube.com/embed/ObmORk5jEmw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <p class="card-text" align="left"><a href="https://youtu.be/8bYBOVWLNIs">Firangi Amir Khan Look</a></p>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="thumb">
+        <iframe width="267" height="150" src="https://www.youtube.com/embed/Pb7iJnIWzNk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <p class="card-text" align="left"><a href="https://youtu.be/Pb7iJnIWzNk">Bazaar Official trailer</a></p>
+    </div>
+    <div class="thumb">
+        <iframe width="267" height="150" src="https://www.youtube.com/embed/Z1BCujX3pw8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <p class="card-text" align="left"><a href="https://youtu.be/Z1BCujX3pw8">Captain Marvel Official-trailer</a></p>
+    </div>
+    <div class="thumb">
+        <iframe width="267" height="150" src="https://www.youtube.com/embed/PuE2JqzXz0U" frameborder="0" allow="autoplay;    encrypted-media" allowfullscreen></iframe>
+        <p class="card-text" align="left"><a href="https://youtu.be/PuE2JqzXz0U">Bholey baba New-song ft.Badshah</a></p>
+    </div>
+    <div class="thumb">
+        <iframe width="267" height="150" src="https://www.youtube.com/embed/G0Hx6uN2AJE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <p class="card-text" align="left"><a href="https://youtu.be/8bYBOVWLNIs">Harrdy Sandhu|Kya Baat Ay</a></p>
+    </div>
+</div>
+
+<hr >
+<h5 id="recommended">Recommended</h5>
+<div class="row">
+    <div class="thumb">
+        <iframe width="267" height="150" src="https://www.youtube.com/embed/CdLQ-mJi7rU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <p class="card-text" align="left"><a href="https://youtu.be/CdLQ-mJi7rU">30 Genius Hacks For Life</a></p>
+    </div>
+    <div class="thumb">
+        <iframe width="267" height="150" src="https://www.youtube.com/embed/on-X2bjXWrs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <p class="card-text" align="left"><a href="https://youtu.be/on-X2bjXWrs">Avengers-4 The End Of Game Tribute Trailer</a></p>
+    </div>
+    <div class="thumb">
+        <iframe width="267" height="150" src="https://www.youtube.com/embed/sV0rWDLXehk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <p class="card-text" align="left"><a href="https://youtu.be/sV0rWDLXehk">Top 7 Fantastic Run-Out By TEAM INDIA</a></p>
+    </div>
+    <div class="thumb">
+        <iframe width="267" height="150" src="https://www.youtube.com/embed/bm2gciBVTdA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <p class="card-text" align="left"><a href="https://youtu.be/bm2gciBVTdA">Vivo V-9 Pro Unboxing & First Look</a></p>
+    </div>
+</div>
+
+<hr >
+<h5 id="recommended">Favourite Playlist</h5>
+<div class="row">
+    <div class="thumb">
+        <iframe width="267" height="150" src="https://www.youtube.com/embed/playlist?list=PLjwBf9QEIO95j5kXIm9XAS_NAiu9_NDmv" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <p class="card-text" align="left"><a href="https://youtu.be/cPhQom-gLq0?list=PLjwBf9QEIO95j5kXIm9XAS_NAiu9_NDmv">Angry Masterji Playlist|BB ki Vines</a></p>
+    </div>
+    <div class="thumb">
+        <iframe width="267" height="150" src="https://www.youtube.com/embed/playlist?list=PLjwBf9QEIO960pcYfNEkUsjz_ExRiOARB" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <p class="card-text" align="left"><a href="https://youtu.be/PoJ73OXEEy0?list=PLjwBf9QEIO960pcYfNEkUsjz_ExRiOARB">Mr. Hola- The Menace|BB ki Vines</a></p>
+    </div>
+    <div class="thumb">
+        <iframe width="267" height="150" src="https://www.youtube.com/embed/playlist?list=PLVlQHNRLflP_OxF1QJoGBwH_TnZszHR_j" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <p class="card-text" align="left"><a href="https://youtu.be/Db9ZYbJONHc?list=PLVlQHNRLflP_OxF1QJoGBwH_TnZszHR_j">Data Structures Tutorial Videos | Mr. Srinivas</a></p>
+    </div>
+    <div class="thumb">
+        <iframe width="267" height="150" src="https://www.youtube.com/embed/playlist?list=PLS1QulWo1RIaJECMeUT4LFwJ-ghgoSH6n" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <p class="card-text" align="left"><a href="https://youtu.be/41qgdwd3zAg?list=PLS1QulWo1RIaJECMeUT4LFwJ-ghgoSH6n">Python Tutorial for Beginners</a></p>
+    </div>
+</div>
+</div>
+<br>
+<br>
+
+<div class="footer-main-div">
+  <div class="footer-social-icons">
+    <ul>
+      <li><a href="https://www.facebook.com/raied.razi" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="https://www.instagram.com/raiedkhan/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#" target="blank"><i class="fab fa-google-plus"></i></a></li>
+    </ul>
+  </div>
+  <div class="footer-menu-one">
+    <ul>
+      <li><a href="mytube.html">Home</a></li>
+      <li><a href="#trending">Trending</a></li>
+      <li><a href="#recommended">Recommended</a></li>
+      <li><a href="signup.html" target="_blank">Signup</a></li>
+    </ul>
+  </div>
+</div>
+<div class="footer-bottom">
+  <p>
+    Designed By:<a href="https://www.facebook.com/raied.razi" target="_blank">Raied Khan</a>   
+    &#169 2018 R.K.Productions
+  </p>
+</div>
+
+
+
+
+
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="Bootstrap/js/bootstrap.bundle.js"></script>
+  <script type="text/javascript"src="javascript/script.js"></script>
+</body>
+</html>

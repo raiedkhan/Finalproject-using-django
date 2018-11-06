@@ -1,0 +1,60 @@
+{% load staticfiles %}
+<html>
+<head>
+ <meta charset="UTF-8">
+    <link rel="icon" href="{%static 'Images/logo.png'%}" >
+    <link rel="stylesheet" href="{% static 'css/signtube.css' %}">
+    <link rel="stylesheet" href="{% static 'Bootstrap/css/bootstrap.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body class="body">
+	<p align="center">
+	 	To become a Part of MyTube Family<br> Signup Here<br><i class="fas fa-hand-point-down"></i>
+	</p>
+	<form class="form" action="mytube.html" method="post" onsubmit="return check();">
+		<table cellpadding="15">
+			<th colspan="2">SIGNUP <img src="{%static 'Images/yt.png'%}" width="8%" height="1.4%"></th>
+			<tr>
+				<td>Username:</td>
+				<td><input type="text" name="name"placeholder="Username" size="40" required="" id="username"></td>
+			</tr>
+			<tr>
+				<td>Email:</td>
+				<td><input type="Email" name="email"placeholder="Email" size="40" required=""id="email"></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input type="password" name="pass"placeholder="Password" size="40" required="" id="password"></td>
+			</tr>
+			<th colspan="2"><input type="submit" name="SIGNUP" value="SIGNUP" class="signup"></th>
+		</table>
+	</form>
+<script>
+ function check()
+ {
+	var username = document.getElementById("username").value;
+	var email = document.getElementById("email").value;
+	var name   = email.substring(0, email.lastIndexOf("@"));
+	var password = document.getElementById("password").value;
+	if(password.includes(username))
+	{
+		alert("Password can't contain the inputs of username!!");
+		alert("Try Diffirent Password");
+		return false;
+	}
+	else if (password.includes(name))
+	{
+		alert("Password can't contain the inputs of email!!");
+		alert("Try Diffirent Password");
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+  }
+</script>
+</body>
+</html>

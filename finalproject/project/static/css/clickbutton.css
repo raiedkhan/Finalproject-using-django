@@ -1,0 +1,204 @@
+*
+{
+	font-family: Berlin Sans FB;
+	margin: 0;
+	padding: 0;
+}
+.nav-link .navbar-brand
+{
+	color: white;
+}
+.navbar-brand
+{
+	font-size:3vw;
+}
+.nav-link
+{
+	font-size:2vw;
+}
+.navbar-brand:hover
+{
+	color: black;
+}
+.nav-link:hover
+{
+	background:green;
+}
+.dropdown-item:hover
+{
+	color: white;
+	background:black;
+}
+.image
+{
+	height: 25vw;
+	background-image: url(../Images/p5.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:50%;
+	color:#000000;
+	display: flex;
+	align-items: center;
+}
+#heading
+{
+	text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+	font-size: 6vw;
+	background-color: #32CD32;
+	border-radius: 80px;
+	color: white;
+}
+#heading:hover
+{
+	color: black;
+text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
+}
+.parallax
+{
+	height: 50vw;
+	background-image: url(../Images/rules.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size:40%;
+	color:#000000;
+	display: flex;
+	align-items: center;
+}
+.parallax h1
+{
+	font-size: 3vw;
+}
+.parallax p
+{
+	font-size: 2vw;
+	text-align: center;
+}
+#showrule
+{
+	cursor: pointer;
+	height: 5vw;
+	width: 20vw;
+	margin: auto;
+	background: #32CD32;
+	color: white;
+	font-size: 2vw;
+	border-radius: 2vw;
+}
+#showrule:hover
+{
+	color: black;
+}
+#hiderule:hover
+{
+	color: black;	
+}
+#hiderule
+{
+	cursor: pointer;
+	height: 5vw;
+	width: 20vw;
+	margin: auto;
+	background:red;
+	color: white;
+	font-size: 2vw;
+	border-radius: 2vw;
+}
+#headrule
+{
+	font-size:7vw;
+}
+#start
+{
+	cursor: pointer;
+	font-size: 3vw;
+}
+#result
+{
+	background-color: black;
+	font-size: 10vw;
+	border-radius: 2vw;
+	color: white;
+}
+#play
+{
+cursor: pointer;
+	height: 5vw;
+	width: 30vw;
+	background: #32CD32;
+	color: white;
+	font-size: 3vw;
+	border-radius: 2vw;
+}
+#button
+{
+	cursor: pointer;
+	height: 8vw;
+	width: 20vw;
+	background:black;
+	color: white;
+	font-size: 3vw;
+	border-radius: 3vw;
+}
+#playagain
+{
+	cursor: pointer;
+	height: 5vw;
+	width: 20vw;
+	background: #32CD32;
+	color: white;
+	font-size: 3vw;
+	border-radius: 2vw;
+}
+#endgame
+{
+	cursor: pointer;
+	height: 5vw;
+	width: 15vw;
+	background:red;
+	color: white;
+	font-size: 3vw;
+	border-radius: 2vw;
+}
+
+.gamearea
+{
+	height: 25vw;
+}
+.gamearea h1
+{
+	font-size: 5vw;
+}
+.footer-bottom
+{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background:#696969;
+  padding: 5px;
+}
+.footer-bottom
+{
+ letter-spacing: 2px;
+  text-align: center;
+  color: white;
+}
+.footer-bottom a
+{
+  color: #ffff;
+}
+.footer-bottom p
+{
+	font-size: 4vw;
+}
+		.timer-wrap h1 {
+			color: black;
+		}
+		.timer-wrap .time {
+			display: none;
+		}
+		.timer-wrap .timer {
+			font-size: 5vw;
+			color:black;
+			text-align: center;
+		}

@@ -1,0 +1,269 @@
+<!--made by Raied Khan,KIIT github=raiedkhan -->
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+ <meta charset="UTF-8">
+    <link rel="icon" href="{%static 'Images/logo.png'%}" >
+    <link rel="stylesheet" href="{% static 'css/gallery.css' %}">
+    <link rel="stylesheet" href="{% static 'Bootstrap/css/bootstrap.css' %}">  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <title>Wallpaper-ERA</title>
+</head>
+<!--Navbar starts-->
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="{% url 'home' %}">R.K.Empire > ></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home' %}">Home <i class="fas fa-home"></i><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'imagegallery' %}">Image-Gallery <i class="fas fa-images"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'videogallery' %}" target="_blank">Video-Gallery <i class="fas fa-video"></i></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Games <i class="fas fa-gamepad"></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="{% url 'tictac' %}" target="_blank">Tic-Tac-Toe</a>
+          <a class="dropdown-item" href="{% url 'clickbutton' %}" target="_blank">Click The Button</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!--Navbar ends-->
+
+<body class="body">
+
+<div id="content">
+  <p id ="p" align="center"><button class="button">Our Best Collections</button></p>
+    <div class="gallery">
+      <img src="{%static 'Images/ironman.jpg'%}" alt="Our best Collections" height="400px" width="100%">
+    </div>
+ </div>
+
+<div class="container">
+    <div class="jumbotron" style="margin-top: 20px;background-color:rgba(9,35,47,0.5);">
+      <center><h1><i class="fas fa-images"></i>  Super-Hero Wallpapers</h1></center>
+    </div>
+    <div class="jumbotron" style="margin-top: 20px;background-color:rgba(9,35,47,0.5);">
+      <center><h1> Marvel Wallpapers<br><i class="fas fa-angle-double-down"></i></h1></center>
+    </div>
+    
+    <div class="row">
+<div class="shadow-lg  mb-5 bg-black rounded card col-lg-4 col-md-6 col-sm-12"  style="width: 18rem;padding:2px;">
+  <img class="card-img-top img-thumbnail" src="{%static 'Images/277804.jpg'%}" alt="Card image cap" style="padding: 0;">
+  <div class="card-body" id="card1">
+    <h5 class="card-title">Expandables </h5>
+    <p class="card-text">Wallpaper of The EXPANDABLES.</p>
+    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#first" id="1">Click to Download</a>
+  </div>
+</div>
+
+<div class="shadow-lg  mb-5 bg-black rounded card col-lg-4 col-md-6 col-sm-12"  style="width: 18rem;padding:2px;">
+  <img class="card-img-top img-thumbnail" src="{%static 'Images/523395.jpg'%}" alt="Card image cap" style="padding: 0;">
+  <div class="card-body" id="card2">
+    <h5 class="card-title">Animated Iron Man</h5>
+    <p class="card-text">Animated wallpaper of IRON MAN.</p>
+    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#second" id="2">Click to Download</a>
+  </div>
+</div>
+
+
+<div class="shadow-lg  mb-5 bg-black rounded card col-lg-4 col-md-6 col-sm-12"  style="width: 18rem;padding:2px;">
+  <img class="card-img-top img-thumbnail" src="{%static 'Images/675871.JPG'%}" alt="Card image cap" style="padding: 0;">
+  <div class="card-body" id="card3">
+    <h5 class="card-title">Civil War</h5>
+    <p class="card-text">Iron Man vs Captain America:Civil-War.</p>
+    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#third" id="3">Click to Download</a>
+  </div>
+</div>
+</div>
+
+<div class="jumbotron" style="margin-top: 20px;background-color:rgba(9,35,47,0.5);">
+      <center><h1>  Dc Wallpapers<br><i class="fas fa-angle-double-down"></i></h1></center>
+    </div>
+    
+<div class="row ">
+<div class="shadow-lg  mb-5 bg-black rounded card col-lg-4 col-md-6 col-sm-12"  style="width: 18rem;padding:2px;">
+  <img class="card-img-top img-thumbnail" src="{%static 'Images/279184.jpg'%}" alt="Card image cap" style="padding: 0;">
+  <div class="card-body" id="card4">
+    <h5 class="card-title">Batman</h5>
+    <p class="card-text">Wallpaper of Batman-The dark knight rises.</p>
+    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#four" id="4">Click to Download</a>
+  </div>
+</div>
+
+<div class="shadow-lg  mb-5 bg-black rounded card col-lg-4 col-md-6 col-sm-12"  style="width: 18rem;padding:2px;">
+  <img class="card-img-top img-thumbnail" src="{%static 'Images/591763.png'%}" alt="Card image cap" style="padding: 0;">
+  <div class="card-body" id="card5">
+    <h5 class="card-title">Batman v/s Superman</h5>
+    <p class="card-text">Wallpaper of Batman v/s Superman.</p>
+    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#five" id="5">Click to Download</a>
+  </div>
+</div>
+
+
+<div class="shadow-lg  mb-5 bg-black rounded card col-lg-4 col-md-6 col-sm-12"  style="width: 18rem;padding:2px;">
+  <img class="card-img-top img-thumbnail" src="{%static 'Images/793778.jpg'%}" alt="Card image cap" style="padding: 0;">
+  <div class="card-body" id="card6">
+    <h5 class="card-title">Batman v/s Superman</h5>
+    <p class="card-text">Wallpaper of Batman v/s Superman.</p>
+    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#six" id="6">Click to Download</a>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="first" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Expandables</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="{%static 'Images/277804.jpg'%}" style="width: 100%">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="{%static 'Images/277804.jpg'%}" class="btn btn-primary" download>Download</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="second" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Iron Man</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="{%static 'Images/523395.jpg'%}" style="width: 100%">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="{%static 'Images/523395.jpg'%}" class="btn btn-primary" download>Download</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="third" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Captain America(Civil War)</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="{%static 'Images/675871.JPG'%}" style="width: 100%">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="{%static 'Images/675871.JPG'%}" class="btn btn-primary" download>Download</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="four" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Batman-The dark knight rises</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="{%static 'Images/279184.jpg'%}" style="width: 100%">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="{%static 'Images/279184.jpg'%}" class="btn btn-primary" download>Download</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="five" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Batman V/s Superman</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="{%static 'Images/591763.png'%}" style="width: 100%">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="{%static 'Images/591763.png'%}" class="btn btn-primary" download>Download</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="six" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Batman V/s Superman</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="{%static 'Images/793778.jpg'%}" style="width: 100%">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="{%static 'Images/793778.jpg'%}" class="btn btn-primary" download>Download</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer-bottom">
+  <p>
+    Designed By:<a href="https://www.facebook.com/raied.razi" target="_blank">Raied Khan</a>   
+    &#169 2018 R.K.Productions
+  </p>
+</div>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+    <script src="{% static 'Bootstrap/js/bootstrap.bundle.js' %}" type="text/javascript"></script>
+    <script type="text/javascript" src="{% static 'js/gallery.js'%}"></script>
+</body>
+</html>

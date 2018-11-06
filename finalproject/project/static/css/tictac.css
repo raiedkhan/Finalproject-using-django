@@ -1,0 +1,195 @@
+*
+{
+	font-family: Berlin Sans FB;
+	margin: 0;
+	padding: 0;
+}
+.nav-link .navbar-brand
+{
+	color: white;
+}
+.navbar-brand
+{
+	font-size:3vw;
+}
+.nav-link
+{
+	font-size:2vw;
+}
+.navbar-brand:hover
+{
+	color: black;
+}
+.nav-link:hover
+{
+	background:green;
+}
+.dropdown-item:hover
+{
+	color: white;
+	background:black;
+}
+.image
+{
+	height: 25vw;
+	background-image: url(../Images/p4.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:60%;
+	color:#000000;
+	display: flex;
+	align-items: center;
+}
+#heading
+{
+	text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+	font-size: 6vw;
+	background:#FF8C00;
+	border-radius: 7vw;
+	color: white;
+	letter-spacing: 0.5vw;
+	margin-left: 8vw;
+	margin-right: 8vw;
+}
+#heading:hover
+{
+	color: black;
+text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
+}
+.parallax
+{
+	height: 50vw;
+	background-image: url(../Images/rules.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size:40%;
+	color:#000000;
+	display: flex;
+	align-items: center;
+}
+.parallax h1
+{
+	font-size: 3vw;
+}
+.parallax p
+{
+	font-size: 2vw;
+	text-align: center;
+}
+#showrule
+{
+	cursor: pointer;
+	height: 5vw;
+	width: 20vw;
+	margin: auto;
+	background: #32CD32;
+	color: white;
+	font-size: 2vw;
+	border-radius: 2vw;
+}
+#showrule:hover
+{
+	color: black;
+}
+#hiderule:hover
+{
+	color: black;	
+}
+#hiderule
+{
+	cursor: pointer;
+	height: 5vw;
+	width: 20vw;
+	margin: auto;
+	background:red;
+	color: white;
+	font-size: 2vw;
+	border-radius: 2vw;
+}
+#headrule
+{
+	font-size:7vw;
+}
+.game
+{
+	height: 38vw;
+}
+.gamearea h1
+{
+	font-size: 5vw;
+}
+.footer-bottom
+{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background:#696969;
+  padding: 5px;
+}
+.footer-bottom
+{
+ letter-spacing: 2px;
+  text-align: center;
+  color: white;
+}
+.footer-bottom a
+{
+  color: #ffff;
+}
+.footer-bottom p
+{
+	font-size: 4vw;
+}
+#board 
+{ 
+    border-radius: 4.5vw;
+    color: white;
+    float: left;
+    font-size:5vw;
+    font-weight: bold;
+}
+
+#board tr td
+{ 
+    cursor: pointer;
+	background: black;
+    height:10vw;
+    text-align: center;
+    vertical-align: middle;
+    width: 10vw;
+    border-radius: 50%;
+}
+#scoreboard 
+{
+	margin-top: 2vw;
+	background: #FF8C00;
+    text-align: center;
+    border-color: black;
+}
+#scoreboard tr th
+{
+	text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+	color: white;
+    font-size: 5vw;
+}
+#scoreboard tr td
+{
+	text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+	color: white;
+    font-size: 3vw;
+}
+#reset,#start,#exit
+{
+    cursor: pointer;
+    height: 5vw;
+    width: 20vw;
+    margin: auto;
+    color: white;
+    font-size: 2vw;
+    border-radius: 2vw;
+}
+#start:hover,#reset:hover,#exit:hover
+{
+	color: black;
+}

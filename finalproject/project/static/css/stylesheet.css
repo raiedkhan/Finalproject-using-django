@@ -1,0 +1,185 @@
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+html {
+  box-sizing: border-box;
+  background:#eeeeee;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+body {
+  margin:0;
+}
+body.fixed-nav nav
+{
+  position: fixed;
+}
+
+nav {
+  background:white;
+  top:0;
+  width: 100%;
+  transition:all 0.1s;
+  position: relative;
+  z-index: 1;
+}
+
+nav ul {
+  margin: 0;
+  padding:0;
+  list-style: none;
+  display:flex;
+}
+
+nav li {
+  font-family: 'Oswald', sans-serif;
+  flex:1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  display: inline-block;
+  color:black;
+  transition:all 0.2s;
+  text-transform: uppercase;
+}
+.search,.button
+{
+  padding: 9px;
+  font-size: 15px;
+}
+.body
+{
+  font-family: 'Oswald', sans-serif;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.row iframe {
+ margin-right: 15px;
+margin-left: 15px
+ }
+.card-text a
+{
+  margin-left: 15px;
+  color: black;
+}
+hr
+{
+  height: 10px;
+  border-color: red;
+}
+#main ul li a
+{
+  color:black;
+}
+.fa-bell:hover
+{
+color:yellow;
+}
+.footer-main-div
+{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background:green;
+  padding: 20px 0px;
+}
+.footer-social-icons
+{
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.footer-social-icons ul
+{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+.footer-social-icons ul li
+{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin:0px 20px;
+  border-radius: 100%;
+  background:white;
+}
+.footer-social-icons ul li a
+{
+  color: red;
+  font-size: 25px;
+  display: block;
+}
+.footer-social-icons ul li a i
+{
+  line-height: 50px;
+}
+.footer-menu-one
+{
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.footer-menu-one ul
+{
+  margin: 0px;
+  padding: 0px;
+  text-align: center; 
+}
+.footer-menu-one ul li
+{
+   display: inline-block;
+   margin: 0px 30px;
+}
+.footer-menu-one ul li a
+{
+  font-family: arial;
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+a
+{
+  text-decoration: none;
+  outline: none;
+}
+.footer-bottom
+{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background:red;
+  padding: 5px;
+}
+.footer-bottom
+{
+  text-align: center;
+  font-family: arial;
+  font-size: 25px;
+  color: white;
+}
+.footer-bottom a
+{
+  color: #ffff;
+}
+.footer-social-icons ul li:hover
+{
+  background: black;
+}
+#heading
+{
+  display: block;
+  background: red;
+  text-align: center;
+  color:white;
+  font-family: arial;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
